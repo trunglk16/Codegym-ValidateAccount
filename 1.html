@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateAccount(account) {
+        patt = /^[_a-z0-9]{6,}$/;
+
+
+        if (patt.test(account)){
+            alert("True");
+        }else{
+            alert("False");
+        }
+    }
+    var account = prompt("Nhap chuoi de kiem tra");
+    validateAccount(account);
+</script>
+</body>
+</html>
